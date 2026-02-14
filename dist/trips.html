@@ -9,8 +9,6 @@
 </head>
 <body class="layout-fixed sidebar-mini">
 
-  <!-- Sidebar yahan copy karo agar chahiye -->
-  
   <!-- Main Content -->
   <div class="content-wrapper">
     <section class="content-header">
@@ -21,7 +19,42 @@
 
     <section class="content">
       <div class="container-fluid">
-        <!-- Form content yahan paste karo -->
+
+        <!-- Trip Form Card -->
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Enter Trip Details</h3>
+          </div>
+          <form>
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="tripName" class="form-label">Trip Name</label>
+                <input type="text" class="form-control" id="tripName" placeholder="Enter trip name" required>
+              </div>
+              <div class="mb-3">
+                <label for="driverName" class="form-label">Driver Name</label>
+                <input type="text" class="form-control" id="driverName" placeholder="Enter driver name" required>
+              </div>
+              <div class="mb-3">
+                <label for="vehicle" class="form-label">Vehicle Number</label>
+                <input type="text" class="form-control" id="vehicle" placeholder="Enter vehicle number" required>
+              </div>
+              <div class="mb-3">
+                <label for="date" class="form-label">Trip Date</label>
+                <input type="date" class="form-control" id="date" required>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="confirm" required>
+                <label class="form-check-label" for="confirm">I confirm the details are correct</label>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-primary">Submit Trip</button>
+            </div>
+          </form>
+        </div>
+        <!-- End Trip Form Card -->
+
       </div>
     </section>
   </div>
@@ -29,4 +62,3 @@
   <script src="js/adminlte.js"></script>
 </body>
 </html>
-
